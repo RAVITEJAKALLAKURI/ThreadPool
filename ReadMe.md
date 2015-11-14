@@ -16,5 +16,6 @@ TaskExecutor  : This class implements the Runnable interface, The run method of 
 
 ThreadPool    : ThreadPool class performs couple of things
 
-	1.) It creates number of TaskExecutor instances, which will be responsible for executing the tasks
-	2.) This class exposes one method submitTask which will be called by task generating program to submitTask task to 		    threadPool.
+1.) It creates number of TaskExecutor instances, which will be responsible for executing the tasks
+
+2.) This class exposes one method submitTask which will be called by task generating program to submitTask task to threadPool.
