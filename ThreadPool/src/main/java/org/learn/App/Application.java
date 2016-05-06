@@ -2,13 +2,13 @@ package org.learn.App;
 
 import org.learn.Pool.ThreadPool;
 
-public class Application {
+public class TestThreadPool {
     public static void main(String[] args) throws InterruptedException {
-    	//create queue size - 4
-    	//Number of threads - 8
-        ThreadPool threadPool = new ThreadPool(4,8);
+    	//create queue size - 3
+    	//Number of threads - 4
+        ThreadPool threadPool = new ThreadPool(3,4);
         //Created 15 Tasks and submit to pool
-        for(int taskNumber = 1 ; taskNumber <= 15; taskNumber++) {
+        for(int taskNumber = 1 ; taskNumber <= 7; taskNumber++) {
             TestTask task = new TestTask(taskNumber);
             threadPool.submitTask(task);
         }
